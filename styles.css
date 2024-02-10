@@ -212,10 +212,10 @@ input[type="email"]:user-invalid + span::after {
   top: -2px;
 }
 
-.pwd-message {
+#pwd-message {
     display: inline-block;
     margin-top: 0.5em;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     color: rgba(255, 74, 74, 1);
 }
 
