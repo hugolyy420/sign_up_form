@@ -20,7 +20,7 @@
     <main class="form-container">
         <div class="form-intro">
             <h2>This is not a real online service! You know you need something like this in your life to help you
-                realize your deepest dreams. Sign up now to get started.</h2>
+                realize your deepest dreams. <br>Sign up now to get started.</h2>
             <h2>You <em>know</em> you want to.</h2>
         </div>
 
@@ -35,23 +35,25 @@
                 </div>
                 <div class="form-row">
                     <div class="input-container"><label for="mail">EMAIL</label><input type="email" id="mail"
-                            name="mail" required></div>
+                            name="mail" pattern="^[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" required>
+                        <span></span></div>
                     <div class="input-container"><label for="phone">PHONE NUMBER</label><input type="tel" id="phone"
                             name="phone" required></div>
                 </div>
                 <div class="form-row">
                     <div class="input-container"><label for="pwd">PASSWORD</label><input type="password" id="pwd"
-                            name="pwd">
+                            name="pwd" required>
                     </div>
                     <div class="input-container"><label for="cpwd">CONFIRM PASSWORD</label><input type="password"
-                            id="cpwd" name="cpwd"></div>
+                            id="cpwd" name="cpwd" required></div>
                 </div>
+                <span class="pwd-message"></span>
 
 
 
             </div>
             <div class="button-container"><label for=""></label><button type="submit">Create Account</button>
-                <div>Already have an account?<a href="">Log in</a></div>
+                <div class="log-in-link-container">Already have an account? <a href="">Log in</a></div>
             </div>
         </form>
 
